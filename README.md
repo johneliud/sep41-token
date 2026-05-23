@@ -22,7 +22,7 @@ A Soroban smart contract implementing the [SEP-41 token standard](https://github
 │       │   ├── token_trait.rs  # SEP-41 TokenInterface trait
 │       │   ├── storage.rs      # Storage key types
 │       │   ├── events.rs       # Contract events
-│       │   ├── errors.rs       # Error types
+│       │   ├── error.rs       # Error types
 │       │   └── test.rs         # Unit tests
 │       ├── Cargo.toml
 │       └── Makefile
