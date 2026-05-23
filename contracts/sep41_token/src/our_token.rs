@@ -49,12 +49,6 @@ impl SibToken {
     ) -> Result<(), ContractError> {
         from.require_auth();
 
-        let from_balance = Self::balance(env.clone(), from.clone());
-
-        if from_balance < amount {
-            return Err(ContractError::InsufficientFunds);
-        }
-
         let key = DataKey::Allowance(AllowanceKey {
             from: from.clone(),
             spender: spender.clone(),
