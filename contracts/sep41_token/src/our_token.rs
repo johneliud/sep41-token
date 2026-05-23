@@ -59,8 +59,8 @@ impl SibToken {
         Approval {
             from,
             spender,
-            amount: amount.try_into().unwrap(),
-            live_until_ledger: live_until_ledger.into_val(&env),
+            amount,
+            live_until_ledger,
         }
         .publish(&env);
 
