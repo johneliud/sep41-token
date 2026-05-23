@@ -62,6 +62,15 @@ A Soroban smart contract implementing the [SEP-41 token standard](https://github
 | 2 | `InsufficientAllowance` | Allowance too low for `transfer_from` or `burn_from` |
 | 3 | `Unauthorized` | `mint` called before `initialize` |
 
+## Deployment
+
+| Network | Contract Address |
+|---------|-----------------|
+| Testnet | `CATS3CMGHLRR4NRKR7SMF4RVRJEVIO755HSNNHXFL3IRM6NWMFEJZJ5N` |
+
+- [View on Stellar Expert](https://stellar.expert/explorer/testnet/contract/CATS3CMGHLRR4NRKR7SMF4RVRJEVIO755HSNNHXFL3IRM6NWMFEJZJ5N)
+- [View on Stellar Lab](https://lab.stellar.org/r/testnet/contract/CATS3CMGHLRR4NRKR7SMF4RVRJEVIO755HSNNHXFL3IRM6NWMFEJZJ5N)
+
 ## Development
 
 ### Build
