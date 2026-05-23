@@ -11,6 +11,21 @@ pub struct SibToken;
 
 #[contractimpl]
 impl SibToken {
+    pub fn initialize(
+        env: Env,
+        admin: Address,
+        initial_supply: i128,
+    ) -> Result<(), ContractError> {
+        env.storage().persistent().set(&DataKey::Admin, &admin);
+        env.storage()
+            .persistent()
+            .set(&DataKey::TotalSupply, &initial_supply);
+        env.storage()
+            .persistent()
+            .set(&DataKey::Balance(admin), &initial_supply);
+        Ok(())
+    }
+
     pub fn balance(env: Env, id: Address) -> i128 {
         env.storage()
             .persistent()
