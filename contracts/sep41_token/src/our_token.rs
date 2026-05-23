@@ -1,8 +1,8 @@
-use soroban_sdk::{contract, contractimpl, Address, Env, IntoVal, String};
+use soroban_sdk::{contract, contractimpl, Address, Env, String};
 
 use crate::{
     error::ContractError,
-    events::{Approval, Transfer},
+    events::{Approval, Burn, Transfer},
     storage::{AllowanceKey, DataKey},
 };
 
