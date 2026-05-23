@@ -2,6 +2,13 @@
 
 A Soroban smart contract implementing the [SEP-41 token standard](https://github.com/stellar/stellar-protocol/blob/master/ecosystem/sep-0041.md) on the Stellar network.
 
+## Getting Started
+
+```bash
+git clone https://github.com/johneliud/sep41-token.git
+cd sep41-token
+```
+
 ## Token Details
 
 | Property | Value |
