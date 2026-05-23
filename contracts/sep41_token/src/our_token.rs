@@ -68,14 +68,14 @@ impl SibToken {
     }
 
     pub fn transfer(
-        env: &Env,
+        env: Env,
         from: Address,
         to: Address,
         amount: i128,
     ) -> Result<(), ContractError> {
         from.require_auth();
-        let sender_balance = Self::balance(env.clone(), from.clone());
 
+        let sender_balance = Self::balance(env.clone(), from.clone());
         let receiver_balance = Self::balance(env.clone(), to.clone());
 
         if sender_balance < amount {
